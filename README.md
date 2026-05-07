@@ -104,13 +104,7 @@ Advanced QR Fraud Detection/
 ├── Test prediction/
 │   └── test_predictions.csv        # Sample model predictions
 │
-├── uploads/                        # Temporary upload storage
-├── Store some/                     # Additional assets
-│
 ├── Learn_from data.ipynb           # Main training & EDA notebook
-├── URL-Based Phishing Detection
-│   Using Machine Learning.ipynb    # Alternate ML pipeline
-└── create_upi_datasets.ipynb       # UPI data generation notebook
 ```
 
 ---
