@@ -652,10 +652,10 @@
             <div class="logo-text">SecureScan 360</div>
         </div>
         <div class="nav-links">
-            <a href="#">Features</a>
-            <a href="#">How it works</a>
-            <a href="#">Dashboard</a>
-            <a href="#">API</a>
+            <!-- <a href="#">Features</a> -->
+            <a href="#how-it-works">How it works</a>
+            <a href="#" onclick="showHistorySection()">History</a>
+            <!-- <a href="#">API</a> -->
         </div>
     </nav>
 
@@ -720,7 +720,7 @@
         <div id="resultContainer"></div>
     </div>
 
-    <!-- Features Section -->
+    <!-- Features Section
     <div class="section-title">Core Capabilities</div>
     <div class="section-sub">Built to stop every type of QR attack</div>
     <div class="features-grid">
@@ -730,19 +730,48 @@
         <div class="feature-card"><div class="feature-icon"><i class="fas fa-brain"></i></div><h3>ML Fraud Fingerprinting</h3><p>Detects new phishing domains before blocklists</p></div>
         <div class="feature-card"><div class="feature-icon"><i class="fas fa-chart-line"></i></div><h3>Analytics Dashboard</h3><p>Live logs, threat heatmaps, exportable reports</p></div>
         <div class="feature-card"><div class="feature-icon"><i class="fas fa-plug"></i></div><h3>API Integration</h3><p>Drop-in REST API for your app in 30 minutes</p></div>
-    </div>
+    </div> -->
 
     <!-- How it Works -->
-    <div class="section-title">How It Works</div>
+    <!-- <div class="section-title">How It Works</div>
     <div class="steps-grid">
         <div class="step"><div class="step-number">01</div><h4>Capture QR</h4><p style="color:#94A3B8">Upload or scan with camera</p></div>
         <div class="step"><div class="step-number">02</div><h4>Scan & Decode</h4><p style="color:#94A3B8">Extract URL or UPI data</p></div>
         <div class="step"><div class="step-number">03</div><h4>Risk Analysis</h4><p style="color:#94A3B8">AI evaluates threats</p></div>
         <div class="step"><div class="step-number">04</div><h4>Verdict</h4><p style="color:#94A3B8">Safe / Warning / Dangerous</p></div>
-    </div>
+    </div> -->
+    <section id="how-it-works">
+        <div class="section-title">How It Works</div>
+
+        <div class="steps-grid">
+            <div class="step">
+                <div class="step-number">01</div>
+                <h4>Capture QR</h4>
+                <p style="color:#94A3B8">Upload or scan with camera</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">02</div>
+                <h4>Scan & Decode</h4>
+                <p style="color:#94A3B8">Extract URL or UPI data</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">03</div>
+                <h4>Risk Analysis</h4>
+                <p style="color:#94A3B8">AI evaluates threats</p>
+            </div>
+
+            <div class="step">
+                <div class="step-number">04</div>
+                <h4>Verdict</h4>
+                <p style="color:#94A3B8">Safe / Warning / Dangerous</p>
+            </div>
+        </div>
+    </section>
 
     <!-- Dashboard Preview -->
-    <div class="dashboard-preview">
+    <!-- <div class="dashboard-preview">
         <div style="display: flex; justify-content: space-between; margin-bottom: 24px;"><span style="font-weight: 600;">Live Threat Intelligence</span><span style="color:#00E5A0; font-size: 12px;"><i class="fas fa-circle" style="font-size: 8px;"></i> Live</span></div>
         <div class="stats-grid">
             <div class="stat-card"><div class="stat-value">98,412</div><div style="color:#94A3B8">Total Scans</div></div>
@@ -753,21 +782,21 @@
         <div class="scan-log"><span>#SC-8821</span><span>malicious-bank-login.xyz</span><span style="color:#FF4B4B;">FRAUD</span></div>
         <div class="scan-log"><span>#SC-8820</span><span>accounts.google.com</span><span style="color:#00E5A0;">SAFE</span></div>
         <div class="scan-log"><span>#SC-8819</span><span>bit.ly/3xR9f</span><span style="color:#FFA500;">WARNING</span></div>
-    </div>
+    </div> -->
 
     <!-- Testimonials -->
-    <div class="testimonials-grid">
+    <!-- <div class="testimonials-grid">
         <div class="testimonial-card"><div class="stars">★★★★★</div><p style="color:#94A3B8; margin-bottom: 20px;">"QR Guard caught sophisticated phishing campaigns that existing tools missed. The redirect tracing is incredible."</p><div><strong>Arjun Kapoor</strong><div style="color:#64748B; font-size: 12px;">CISO, FinTech</div></div></div>
         <div class="testimonial-card"><div class="stars">★★★★★</div><p style="color:#94A3B8; margin-bottom: 20px;">"Integrated the API in one afternoon. Now we block 800+ fraudulent QR scans daily."</p><div><strong>Sara Patel</strong><div style="color:#64748B; font-size: 12px;">Head of Security</div></div></div>
         <div class="testimonial-card"><div class="stars">★★★★★</div><p style="color:#94A3B8; margin-bottom: 20px;">"The ML fraud fingerprinting flagged domains days before public blocklists. Proactive protection is real."</p><div><strong>Miguel Reyes</strong><div style="color:#64748B; font-size: 12px;">SOC Lead</div></div></div>
-    </div>
+    </div> -->
 
     <!-- CTA -->
-    <div class="cta-section">
+    <!-- <div class="cta-section">
         <h2>Start protecting users from QR fraud today</h2>
         <p style="color:#94A3B8; margin-bottom: 32px;">Free tier includes 5,000 scans/month. No credit card required.</p>
         <button class="btn-primary" onclick="document.getElementById('scanner-section').scrollIntoView({behavior:'smooth'})"><i class="fas fa-rocket"></i> Get Started Free</button>
-    </div>
+    </div> -->
 
     <footer>
         <div style="display: flex; align-items: center; gap: 8px;"><i class="fas fa-shield-halved" style="color:#00E5A0;"></i> SecureScan 360</div>
@@ -785,15 +814,162 @@
     canvasElement = document.createElement('canvas');
     canvasContext = canvasElement.getContext('2d');
     
+    // function detectUPIQRCode(text) {
+    //     const upiPatterns = [{ pattern: /upi:\/\/pay\?pa=([^&]+)/, type: 'UPI Deep Link' },{ pattern: /([a-zA-Z0-9._-]+@[a-zA-Z0-9]+)/, type: 'UPI ID' },{ pattern: /pa=([^&]+)/, type: 'UPI Parameter' }];
+    //     for (let pattern of upiPatterns) { const match = text.match(pattern.pattern); if(match) return { isUPI: true, upiId: match[1]||match[0], type: pattern.type }; }
+    //     return { isUPI: false };
+    // }
+    
+    // UPI Payment QR Detection
     function detectUPIQRCode(text) {
-        const upiPatterns = [{ pattern: /upi:\/\/pay\?pa=([^&]+)/, type: 'UPI Deep Link' },{ pattern: /([a-zA-Z0-9._-]+@[a-zA-Z0-9]+)/, type: 'UPI ID' },{ pattern: /pa=([^&]+)/, type: 'UPI Parameter' }];
-        for (let pattern of upiPatterns) { const match = text.match(pattern.pattern); if(match) return { isUPI: true, upiId: match[1]||match[0], type: pattern.type }; }
-        return { isUPI: false };
+        let isUPI = false;
+        let type = null;
+        
+        // Basic check if it's a UPI format
+        const lowerText = text.toLowerCase();
+        if (lowerText.startsWith('upi://') || 
+            lowerText.startsWith('payto://') ||
+            lowerText.startsWith('tez://') ||
+            lowerText.startsWith('phonepe://') ||
+            lowerText.startsWith('paytm://') ||
+            lowerText.startsWith('bhim://')) {
+            isUPI = true;
+            type = 'UPI Deep Link';
+        } else if (/([a-zA-Z0-9._-]+@[a-zA-Z0-9]+)/.test(text)) {
+            isUPI = true;
+            type = 'UPI ID';
+        }
+        
+        let upiInfo = {
+            isUPI: isUPI,
+            upiId: null,
+            payeeName: null,
+            amount: null,
+            currency: 'INR',
+            type: type,
+            rawData: text
+        };
+
+        if (isUPI) {
+            // Extract specific fields globally regardless of which pattern matched first
+            const paMatch = text.match(/pa=([^&]+)/);
+            if (paMatch) upiInfo.upiId = decodeURIComponent(paMatch[1]);
+            
+            const pnMatch = text.match(/pn=([^&]+)/);
+            if (pnMatch) upiInfo.payeeName = decodeURIComponent(pnMatch[1]);
+            
+            const amMatch = text.match(/am=([^&]+)/);
+            if (amMatch) upiInfo.amount = decodeURIComponent(amMatch[1]);
+            
+            // If no 'pa=' was found but it matches the UPI ID format standalone
+            if (!upiInfo.upiId) {
+                const idMatch = text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9]+)/);
+                if (idMatch) upiInfo.upiId = idMatch[1];
+            }
+        }
+
+        return upiInfo;
     }
     function extractURL(text) { const urlRegex = /(https?:\/\/[^\s]+)|(www\.[^\s]+)|([a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,})/g; const matches = text.match(urlRegex); return matches ? matches[0] : null; }
     function getDomainFromURL(url) { try { let u = url.startsWith('http')?url:'http://'+url; return new URL(u).hostname; } catch(e) { return url.split('/')[0]; } }
     
-    function detectUPIFraud(upiInfo) { return { isSafe: true, result: '✅ SAFE UPI QR Code', explanation: 'UPI payment QR detected. Verify payee details.', confidence: 20, type: 'UPI', upiInfo }; }
+    // UPI Fraud Detection
+    function detectUPIFraud(upiInfo) {
+        const threats = [];
+        let confidence = 0;
+        
+        // Check for suspicious UPI patterns
+        const suspiciousUPIPatterns = [
+            { pattern: /@paytm|@okhdfcbank|@okaxis|@ybl|@ibl|@pingpay/i, threat: 'Common UPI handle', score: 10 },
+            { pattern: /[0-9]{10}/, threat: 'Mobile number as UPI ID - verify carefully', score: 30 },
+            { pattern: /gift|cashback|free|offer|prize|lottery|winner/i, threat: 'Suspicious UPI ID name', score: 50 },
+            { pattern: /^[0-9]+$/, threat: 'Only numbers in UPI ID - possible scam', score: 40 }
+        ];
+
+        // Check UPI ID
+        if (upiInfo.upiId) {
+            suspiciousUPIPatterns.forEach(item => {
+                if (item.pattern.test(upiInfo.upiId)) {
+                    threats.push(item.threat);
+                    confidence += item.score;
+                }
+            });
+        }
+
+        // Check for large amounts
+        if (upiInfo.amount) {
+            const amountNum = parseFloat(upiInfo.amount);
+            if (amountNum > 10000) {
+                threats.push(`Large amount detected: ₹${amountNum}`);
+                confidence += 35;
+            }
+            if (amountNum > 50000) {
+                threats.push('Very large transaction - verify carefully');
+                confidence += 20;
+            }
+        }
+
+        // Check payee name
+        if (upiInfo.payeeName) {
+            const payeeLower = upiInfo.payeeName.toLowerCase();
+            if (payeeLower.includes('bank') || payeeLower.includes('sbi') || payeeLower.includes('hdfc')) {
+                threats.push('Bank name in payee - verify if official');
+                confidence += 25;
+            }
+        }
+
+        // Determine result based on confidence
+        if (confidence >= 70) {
+            return {
+                isSafe: false,
+                result: '🚨 DANGEROUS UPI QR Code',
+                explanation: threats.length > 0 ? threats.join(', ') : 'High-risk UPI payment QR detected! Possible scam.',
+                confidence: Math.min(confidence, 99),
+                threats: threats,
+                type: 'UPI',
+                upiInfo: upiInfo
+            };
+        } else if (confidence >= 35) {
+            return {
+                isSafe: false,
+                result: '⚠ SUSPICIOUS UPI QR Code',
+                explanation: threats.length > 0 ? threats.join(', ') : 'This UPI QR code shows suspicious patterns. Verify before payment.',
+                confidence: confidence,
+                threats: threats,
+                type: 'UPI',
+                upiInfo: upiInfo
+            };
+        } else {
+            return {
+                isSafe: true,
+
+                result: 'SAFE UPI QR Code',
+
+                explanation: `
+                    This UPI QR code appears safe for payment.<br><br>
+
+                    <strong>👤 Payee Name:</strong> ${upiInfo.payeeName || 'Unknown'}<br>
+
+                    <strong>🏦 UPI ID:</strong> ${upiInfo.upiId || 'Not Found'}<br><br>
+
+                    <strong>📄 Raw QR Data:</strong><br>
+
+                    <small style="word-break:break-all;">
+                        ${upiInfo.rawData}
+                    </small>
+                `,
+
+                confidence: confidence,
+
+                threats: threats,
+
+                type: 'UPI',
+
+                upiInfo: upiInfo
+            };
+        }
+    }
+
     
     async function detectFraud(url, qrData) {
         const upiInfo = detectUPIQRCode(qrData);
@@ -801,18 +977,84 @@
         if(url) {
             try {
                 const response = await fetch('/scan-qr-data', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ qr_data: qrData }) });
-                if(response.ok) { const data = await response.json(); return { isSafe: data.result.includes('Safe'), result: data.result, explanation: Array.isArray(data.explanation)?data.explanation.join(', '):data.explanation, confidence: 50, type: 'URL', url: url }; }
+                if(response.ok) { const data = await response.json(); return { isSafe: data.result.includes('Safe'), result: data.result, explanation: Array.isArray(data.explanation)?data.explanation.join(', '):data.explanation, confidence: data.confidence || 50, type: 'URL', url: url }; }
                 else throw new Error('API error');
             } catch(e) { return { isSafe: false, result: '⚠ ML MODEL OFFLINE', explanation: 'Using local analysis. Connect Flask server for full ML detection.', confidence: 35, type: 'URL', url: url }; }
         }
         return { isSafe: true, result: '📝 Text QR Code', explanation: 'This QR code contains text, not a URL.', confidence: 0, type: 'TEXT', text: qrData };
     }
     
+// ========== HISTORY FUNCTIONALITY ==========
+    function saveToHistory(result, url, qrData) {
+        const historyItem = {
+            qrData: qrData || 'N/A',
+            url: url || 'N/A',
+            result: result.result,
+            confidence: result.confidence,
+            type: result.type,
+            timestamp: new Date().toISOString()
+        };
+        let history = JSON.parse(localStorage.getItem('scanHistory') || '[]');
+        history.unshift(historyItem);
+        if (history.length > 50) history = history.slice(0, 50);
+        localStorage.setItem('scanHistory', JSON.stringify(history));
+    }
+    
+    function getHistory() {
+        return JSON.parse(localStorage.getItem('scanHistory') || '[]');
+    }
+    
+    function clearHistory() {
+        localStorage.removeItem('scanHistory');
+    }
+    
+function displayHistory() {
+        const history = getHistory();
+        const container = document.getElementById('resultContainer');
+        if (history.length === 0) {
+            container.innerHTML = `<div class="result-card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;"><span style="font-weight:600;">Scan History</span><button class="btn-outline" style="padding:8px 12px;font-size:14px;" onclick="closeHistory()">✕ Close</button></div><p style="color:#94A3B8; text-align:center;">No scan history yet. Start scanning QR codes!</p></div>`;
+            return;
+        }
+        let html = `<div class="result-card"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;"><span style="font-weight:600;">Scan History (${history.length})</span><div style="display:flex;gap:8px;"><button class="btn-outline" style="padding:8px 12px;font-size:12px;" onclick="clearHistory();displayHistory();">Clear All</button><button class="btn-outline" style="padding:8px 12px;font-size:14px;" onclick="closeHistory()">✕ Close</button></div></div>`;
+        history.forEach((item, index) => {
+            const riskClass = item.result.includes('SAFE') ? 'risk-safe' : (item.result.includes('SUSPICIOUS') || item.result.includes('WARNING') ? 'risk-warning' : 'risk-danger');
+            const date = new Date(item.timestamp).toLocaleString();
+            const displayUrl = item.url && item.url !== 'N/A' ? item.url.substring(0, 40) + (item.url.length > 40 ? '...' : '') : item.qrData.substring(0, 30);
+            html += `<div style="background:rgba(0,0,0,0.3);padding:16px;border-radius:12px;margin-bottom:8px;cursor:pointer;" onclick="showHistoryDetail(${index})"><div style="display:flex;justify-content:space-between;align-items:center;"><span style="font-size:13px;color:#94A3B8;">${date}</span><span class="risk-badge ${riskClass}" style="font-size:11px;padding:4px 12px;">${item.result}</span></div><div style="font-size:14px;margin-top:8px;word-break:break-all;">${displayUrl}</div></div>`;
+        });
+        html += `</div>`;
+        container.innerHTML = html;
+        document.getElementById('spinner').style.display = 'none';
+    }
+    
+function showHistoryDetail(index) {
+        const history = getHistory();
+        const item = history[index];
+        if (!item) return;
+        const riskClass = item.result.includes('SAFE') ? 'risk-safe' : (item.result.includes('SUSPICIOUS') || item.result.includes('WARNING') ? 'risk-warning' : 'risk-danger');
+        const container = document.getElementById('resultContainer');
+        container.innerHTML = `<div class="result-card"><div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;"><div><i class="fas ${item.result.includes('SAFE') ? 'fa-check-circle' : (item.result.includes('SUSPICIOUS') ? 'fa-exclamation-triangle' : 'fa-skull-crossbones')}" style="font-size:32px; color:${riskClass === 'risk-safe' ? '#00E5A0' : (riskClass === 'risk-warning' ? '#FFA500' : '#FF4B4B')};"></i></div><span class="risk-badge ${riskClass}">${item.result}</span></div><div style="margin:20px 0;"><div style="color:#94A3B8;font-size:13px;">Risk Score</div><div style="height:6px;background:#1E293B;border-radius:3px;margin-top:8px;"><div style="width:${item.confidence}%;height:100%;background:${item.confidence >= 70 ? '#FF4B4B' : (item.confidence >= 35 ? '#FFA500' : '#00E5A0')};border-radius:3px;"></div></div><div style="text-align:right;font-size:12px;margin-top:4px;">${item.confidence}% risk</div></div>${item.url && item.url !== 'N/A' ? `<div style="background:#0A0C12;padding:12px;border-radius:12px;"><strong>URL:</strong><br><a href="${item.url}" target="_blank" style="color:#00E5A0;">${item.url}</a></div>` : ''}<div style="background:rgba(0,0,0,0.3);padding:16px;border-radius:12px;margin-top:16px;"><strong>QR Data:</strong><br>${item.qrData}</div><div style="color:#94A3B8;font-size:12px;margin-top:12px;">Scanned: ${new Date(item.timestamp).toLocaleString()}</div><div style="display:flex;gap:12px;margin-top:20px;"><button class="btn-primary" style="flex:1;" onclick="displayHistory()"><i class="fas fa-arrow-left"></i> Back</button><button class="btn-outline" style="flex:1;" onclick="closeHistory()">✕ Close</button>${item.url && item.url !== 'N/A' ? `<button class="btn-outline" style="flex:1;" onclick="window.open('${item.url}','_blank')">Visit URL</button>` : ''}</div></div>`;
+    }
+    
+function showHistorySection() {
+        document.getElementById('scanner-section').scrollIntoView({behavior:'smooth'});
+        document.getElementById('upload-section').style.display = 'none';
+        document.getElementById('camera-section').style.display = 'none';
+        document.getElementById('spinner').style.display = 'none';
+        displayHistory();
+    }
+     
+    function closeHistory() {
+        document.getElementById('resultContainer').innerHTML = '';
+        document.getElementById('upload-section').style.display = 'block';
+    }
+     
     function displayResult(result, url, qrData) {
+        saveToHistory(result, url, qrData);
         const container = document.getElementById('resultContainer');
         const riskClass = result.result.includes('SAFE') ? 'risk-safe' : (result.result.includes('SUSPICIOUS') || result.result.includes('WARNING') ? 'risk-warning' : 'risk-danger');
         const riskIcon = result.result.includes('SAFE') ? 'fa-check-circle' : (result.result.includes('SUSPICIOUS') ? 'fa-exclamation-triangle' : 'fa-skull-crossbones');
-        container.innerHTML = `<div class="result-card"><div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;"><div><i class="fas ${riskIcon}" style="font-size: 32px; color: ${riskClass === 'risk-safe' ? '#00E5A0' : (riskClass === 'risk-warning' ? '#FFA500' : '#FF4B4B')};"></i></div><span class="risk-badge ${riskClass}">${result.result}</span></div><div style="margin: 20px 0;"><div style="color:#94A3B8; font-size: 13px;">Risk Score</div><div style="height: 6px; background: #1E293B; border-radius: 3px; margin-top: 8px;"><div style="width: ${result.confidence}%; height: 100%; background: ${result.confidence >= 70 ? '#FF4B4B' : (result.confidence >= 35 ? '#FFA500' : '#00E5A0')}; border-radius: 3px;"></div></div><div style="text-align: right; font-size: 12px; margin-top: 4px;">${result.confidence}% risk</div></div>${url ? `<div style="background:#0A0C12; padding: 12px; border-radius: 12px;"><strong>URL:</strong><br><a href="${url}" target="_blank" style="color:#00E5A0;">${url}</a></div>` : ''}<div style="background:rgba(0,0,0,0.3); padding: 16px; border-radius: 12px; margin-top: 16px;"><strong>AI Analysis:</strong><br>${result.explanation}</div><div class="action-buttons" style="display: flex; gap: 12px; margin-top: 20px;"><button class="btn-primary" style="flex:1;" onclick="window.location.reload()"><i class="fas fa-redo"></i> Scan Again</button>${url ? `<button class="btn-outline" style="flex:1;" onclick="window.open('${url}','_blank')">Visit URL</button>` : ''}</div></div>`;
+        container.innerHTML = `<div class="result-card"><div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;"><div><i class="fas ${riskIcon}" style="font-size: 32px; color: ${riskClass === 'risk-safe' ? '#00E5A0' : (riskClass === 'risk-warning' ? '#FFA500' : '#FF4B4B')};"></i></div><span class="risk-badge ${riskClass}">${result.result}</span></div><div style="margin: 20px 0;"><div style="color:#94A3B8; font-size: 13px;">Risk Score</div><div style="height: 6px; background: #1E293B; border-radius: 3px; margin-top: 8px;"><div style="width: ${result.confidence}%; height: 100%; background: ${result.confidence >= 70 ? '#FF4B4B' : (result.confidence >= 35 ? '#FFA500' : '#00E5A0')}; border-radius: 3px;"></div></div><div style="text-align: right; font-size: 12px; margin-top: 4px;">${result.confidence}% risk</div></div>${url ? `<div style="background:#0A0C12; padding: 12px; border-radius: 12px;"><strong>URL:</strong><br><a href="${url}" target="_blank" style="color:#00E5A0;">${url}</a></div>` : ''}<div style="background:rgba(0,0,0,0.3); padding: 16px; border-radius: 12px; margin-top: 16px;"><strong>AI Analysis:</strong><br>${result.explanation}</div><div class="action-buttons" style="display: flex; gap: 12px; margin-top: 20px;"><button class="btn-primary" style="flex:1;" onclick="window.location.reload()"><i class="fas fa-redo"></i> Scan Again</button>${url ? `<button class="btn-outline" style="flex:1;" onclick="window.open('${url}','_blank')">Visit URL</button>` : ''}<button class="btn-outline" style="flex:1;" onclick="displayHistory()"><i class="fas fa-history"></i> History</button></div></div>`;
         document.getElementById('spinner').style.display = 'none';
     }
     
