@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request, jsonify, redirect  
+from flask import Flask, render_template, request, jsonify, redirect, send_from_directory  
 from urllib.parse import urlparse
 import cv2
 import joblib
 import re
+import os
 
 app = Flask(__name__)
 
@@ -245,13 +246,17 @@ def index():
             result = "❌ QR not detected"
 
         # Clean up temp file
-        import os
         try:
             os.remove(filepath)
         except:
             pass
 
     return render_template("index.html", result=result, url=url, explanation=explanation)
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),
+                               'favicon.png', mimetype='image/png')
 
     
 if __name__ == "__main__":
