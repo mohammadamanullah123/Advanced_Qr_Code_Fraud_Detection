@@ -2,13 +2,22 @@ from flask import Flask, render_template, request, jsonify, redirect, send_from_
 from urllib.parse import urlparse
 import cv2
 import joblib
+import urllib.request
 import re
 import os
 
 app = Flask(__name__)
 
 # Load model
-model = joblib.load("Model/qr_fraud_model.pkl")
+# model = joblib.load("Model/qr_fraud_model.pkl")
+
+MODEL_URL = "https://huggingface.co/amanullah19/Advance_Qr_Code_detection/resolve/main/qr_fraud_model.pkl"
+MODEL_PATH = "/tmp/qr_fraud_model.pkl"
+
+if not os.path.exists(MODEL_PATH):
+    urllib.request.urlretrieve(MODEL_URL, MODEL_PATH)
+
+model = joblib.load(MODEL_PATH)
 
 suspicious_words = ['login','secure','verify','account','update','bank','ad']
 
