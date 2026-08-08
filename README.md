@@ -11,6 +11,7 @@
 This project is a full-stack **Flask** application that uses a trained **Random Forest** classifier (with fallback models like Logistic Regression and XGBoost) to analyze QR codes and URLs for fraud indicators. It supports both **image upload** and **live camera scanning** with a modern, responsive glassmorphism UI.
 
 ---
+Live Demo: https://advanced-qr-code-fraud-detection-mn.vercel.app/
 
 ## ✨ Features
 
